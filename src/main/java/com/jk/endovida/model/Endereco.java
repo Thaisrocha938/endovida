@@ -21,7 +21,7 @@ public class Endereco implements Serializable {
     @Column(name = "ID_ENDERECO")
     private Long id;
 
-    @OneToOne(mappedBy = "ENDERECO_ID")
+    @OneToOne(mappedBy = "enderecoId")
     public Usuario usuario;
 
     @Column(name = "LOGRADOURO")

@@ -17,7 +17,7 @@ public class JpaConfig {
         dataSourceBuilder.driverClassName("com.mysql.cj.jdbc.Driver");
         dataSourceBuilder.url("jdbc:mysql://localhost:3306/ENDOVIDA?createDatabaseIfNotExist=true");
         dataSourceBuilder.username("root");
-        dataSourceBuilder.password("root");
+        dataSourceBuilder.password("admin");
         return dataSourceBuilder.build();
     }
 

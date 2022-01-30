@@ -25,7 +25,7 @@ public class Doencas {
     @Column(name = "NOME")
     private String nome;
 
-    @OneToMany(mappedBy = "DOENCA")
+    @OneToMany(mappedBy = "doenca")
     private List<Sintomas> sintomas;
 
     @ManyToOne
@@ -38,10 +38,5 @@ public class Doencas {
 
     @Column(name = "DESCRICAO")
     private String descricao;
-
-    @OneToMany(mappedBy = "DOENCA")
-    @Column(name = "CAUSA_DOENCA")
-    private List<CausaDoenca> causaDoenca;
-
 
 }

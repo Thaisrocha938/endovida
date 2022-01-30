@@ -20,7 +20,7 @@ public class Categoria {
     @Column(name = "ID_CATEGORIA")
     private Long id;
 
-    @OneToMany(mappedBy = "CATEGORIA")
+    @ManyToOne
     private Doencas doencas;
 
     @Column(name = "NOME")
